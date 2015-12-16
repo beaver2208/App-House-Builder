@@ -1,0 +1,58 @@
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.house{
+	float: left;
+}
+/* roof */
+.roof {
+    width: 0;
+    height: 0;
+    border-left: 53px solid transparent;
+    border-right: 53px solid transparent;
+    border-bottom: 53px solid black;
+    position:relative;
+}
+.roof:after{
+    content:'';
+    position:absolute;
+    top:5px;
+    left:-48px;
+    width: 0;
+    height: 0;
+    border-left: 48px solid transparent;
+    border-right: 48px solid transparent;
+    border-bottom: 48px solid white;
+}
+/* floor */
+.floor{
+	width: 100px;
+	border: 3px solid black;
+
+}
+/* windows */
+
+.window{
+	width: 25px;
+	height: 35px;
+	border: 2px solid blue;
+	float: left;
+	margin: 10px 10px;
+}
+
+/* door */
+
+.door{
+	width: 25px;
+	height: 50px;
+	border: 2px solid red;
+	float: right;
+	margin: 10px 10px 0;
+}
+/* slider */
+
+#slider{
+	margin: 50px 50px;
+}
